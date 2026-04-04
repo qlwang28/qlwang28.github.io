@@ -94,3 +94,8 @@ a:hover {
 .news-text {
     flex: 1;
 }
+
+.paper-list li {
+    margin-bottom: 22px;
+    line-height: 1.7;
+}
