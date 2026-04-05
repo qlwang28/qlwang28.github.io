@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     background-color: white;
     color: #222;
     margin: 0;
@@ -27,24 +27,28 @@ body {
 
 .info h1 {
     margin: 0;
-    font-size: 30px;
+    font-size: 37px;
 }
 
 .title {
+    margin: 2px 0;
     color: #555;
-    margin-top: 5px;
+    font-size: 20px;
 }
 
 /* 图标 */
-.icons a {
-    font-size: 26px;
-    margin-right: 12px;
-    text-decoration: none;
+.icon {
+    width: 50px;
+    height: 50px;
+    margin-top: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
 }
 
 /* 内容区 */
 .section {
     margin-top: 30px;
+    font-size: 18px;
 }
 
 h2 {
@@ -60,24 +64,28 @@ h2 {
 
 .section ul li {
     margin-bottom: 6px;
+    font-size: 17px;
 }
 
 /* 论文链接 PDF */
 a {
-    color: #2a6db0;
+    color: #446E9B;
+    /* 更深、更学术 */
     text-decoration: none;
-    font-size: 14px;
+    font-size: 18px;
     margin-left: 6px;
 }
 
 a:hover {
     text-decoration: underline;
+    color: #163d7a;
 }
 
 /* 注释 */
 .note {
-    color: gray;
-    font-size: 14px;
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
 }
 
 /* News 样式 */
@@ -87,7 +95,7 @@ a:hover {
 }
 
 .news-date {
-    width: 120px;
+    width: 180px;
     font-weight: bold;
 }
 
@@ -96,6 +104,14 @@ a:hover {
 }
 
 .paper-list li {
-    margin-bottom: 22px;
-    line-height: 1.7;
+    font-size: 17px;
+    line-height: 1.35;
+    /* 控制内部行距（关键） */
+    margin-bottom: 14px;
+    /* 控制论文之间间距 */
+}
+
+.paper-list li a {
+    font-weight: 750;
+    /* 比 bold 稍微柔和一点 */
 }
