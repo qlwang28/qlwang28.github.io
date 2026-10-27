@@ -36,6 +36,13 @@ body {
     font-size: 20px;
 }
 
+.email {
+    display: inline-block;
+    margin: 4px 0 0;
+    color: #666;
+    font-size: 15px;
+}
+
 .research-areas {
     max-width: 570px;
     margin-top: 12px;
@@ -103,33 +110,74 @@ a:hover {
 }
 
 .news-list {
-    max-height: 260px;
+    max-height: 400px;
     overflow-y: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
     padding-right: 8px;
 }
 
-.news-list::-webkit-scrollbar { display: none; }
-.news-list:focus-visible { outline: 2px solid #9ab4ce; }
+.news-list::-webkit-scrollbar {
+    display: none;
+}
 
-.visitor-section { max-width: 300px; }
-#visitor-map { width: 260px; height: 145px; border-radius: 5px; }
-.visitor-status { margin: 7px 0 0; color: #666; font-size: 13px; }
+.news-list:focus-visible {
+    outline: 2px solid #9ab4ce;
+}
 
-.student-section p { line-height: 1.55; }
-.student-section h1 { font-size: 28px; color: #333; }
-.graduates-list { max-height: 230px; overflow-y: auto; scrollbar-width: none; }
-.graduates-list::-webkit-scrollbar { display: none; }
+.teaching-list { padding-left: 24px; color: #444; }
+.teaching-list li { margin-bottom: 6px; }
+
+.student-section p {
+    line-height: 1.55;
+}
+
+.student-section h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+.graduates-list {
+    max-height: 230px;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.graduates-list::-webkit-scrollbar {
+    display: none;
+}
 
 @media (max-width: 640px) {
-    .container { margin: 20px auto; padding: 24px; }
-    .header { align-items: flex-start; }
-    .avatar { width: 120px; margin-right: 18px; }
-    .info h1 { font-size: 28px; }
-    .title { font-size: 16px; }
-    .research-areas { font-size: 17px; }
-    .news-date { width: 110px; flex: 0 0 110px; }
+    .container {
+        margin: 20px auto;
+        padding: 24px;
+    }
+
+    .header {
+        align-items: flex-start;
+    }
+
+    .avatar {
+        width: 120px;
+        margin-right: 18px;
+    }
+
+    .info h1 {
+        font-size: 28px;
+    }
+
+    .title {
+        font-size: 16px;
+    }
+
+    .research-areas {
+        font-size: 17px;
+    }
+
+    .news-date {
+        width: 110px;
+        flex: 0 0 110px;
+    }
 }
 
 .news-date {
